@@ -4,7 +4,38 @@ body {
 
 }
 
+.header {
+  padding: 20px 0;
+  .header_meny_mane{
+    h1 {
+      padding-top: 25px;
+      font-size: 18px;
+    }
+  }
+  .header_logo {
+    a {
+      img {
+        margin: auto;
+        display: block;
+        width: 155px;
+        height: 126px;
+      }
+    }
+  }
+  .header_meny {
+    ul {
+      text-align: center;
+      li {
+        padding-top: 47px;
+        font-size: 24px;
+        a {
+          color: #000000;
+        }
+      }
+    }
 
+  }
+}
 
 .content {
   .banner {
