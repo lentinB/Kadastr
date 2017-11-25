@@ -6,7 +6,21 @@ body {
 
 .header {
   padding: 20px 0;
-  .header_meny_mane{
+  .header_contacts {
+    text-align: right;
+    a {
+
+      display: block;
+      color: #000000;
+      font-size: 18px;
+    }
+    p {
+      line-height: 6px;
+      padding-top: 33px;
+      font-size: 20px;
+    }
+  }
+  .header_meny_mane {
     h1 {
       padding-top: 25px;
       font-size: 18px;
@@ -24,8 +38,9 @@ body {
   }
   .header_meny {
     ul {
-      text-align: center;
       li {
+        float: left;
+        margin-right: 10%;
         padding-top: 47px;
         font-size: 24px;
         a {
@@ -39,7 +54,36 @@ body {
 
 .content {
   .banner {
-    background-color: #ccc;
+    padding-top: 5%;
+    background-image: url(../images/banner1.png);
+    height: 492px;
+    width: 100%;
+    background-position: 50%;
+    .title {
+      button {
+        margin-top: 5%;
+        background-color: #FFFF89;
+        border-radius: 0;
+        width: 340px;
+        height: 80px;
+        font-size: 28px;
+        padding: 18px 12px;
+      }
+      button:hover {
+        text-decoration: none;
+        background-color: #8A0714;
+        color: #FFFFFF;
+      }
+      p {
+        font-size: 35px;
+        color: #ffffff;
+      }
+      h2 {
+        line-height: 150%;
+        font-size: 40px;
+        color: #FFFFFF;
+      }
+    }
   }
 }
 
