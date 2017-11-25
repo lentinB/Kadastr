@@ -85,6 +85,56 @@ body {
       }
     }
   }
+  .speakers {
+    h2 {
+      font-size: 36px;
+      text-align: center;
+      margin: 50px 50px;
+    }
+    .column_red {
+      background-color: #8A0714;
+      height: 291px;
+      color: #FFFFFF;
+      font-size: 20px;
+      text-align: center;
+      padding-top: 7%;
+
+      button {
+        margin: 20px;
+        border: 1px solid #FFFFFF;
+        border-radius: 0px;
+        background-color: transparent;
+        color: #FFFFFF;
+        font-size: 20px;
+        padding: 15px 15px;
+      }
+    }
+    .column_green {
+      display: block;
+      background-color: #001D03;
+      height: 291px;
+      color: #ffffff;
+      font-size: 20px;
+      text-align: center;
+      padding-top: 7%;
+
+      button {
+        margin: 20px;
+        border: 1px solid #FFFFFF;
+        border-radius: 0px;
+        background-color: transparent;
+        color: #FFFFFF;
+        font-size: 20px;
+        padding: 15px 15px;
+      }
+    }
+    .column_img {
+      width: 292px;
+      height: 291px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
 
 @import "media";
