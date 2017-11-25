@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="200ef5ec-b13a-4037-924d-63678f1703c6" name="Test-git" url="https://github.com/lentinB/Kadastr">
+        <fileTransfer port="0" mountedRoot="C:\OSPanel\domains\Kadastr.dev" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
