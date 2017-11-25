@@ -1,5 +1,15 @@
 .header {
   padding: 20px 0; }
+  .header .header_contacts {
+    text-align: right; }
+    .header .header_contacts a {
+      display: block;
+      color: #000000;
+      font-size: 18px; }
+    .header .header_contacts p {
+      line-height: 6px;
+      padding-top: 33px;
+      font-size: 20px; }
   .header .header_meny_mane h1 {
     padding-top: 25px;
     font-size: 18px; }
@@ -8,15 +18,78 @@
     display: block;
     width: 155px;
     height: 126px; }
-  .header .header_meny ul {
-    text-align: center; }
-    .header .header_meny ul li {
-      padding-top: 47px;
-      font-size: 24px; }
-      .header .header_meny ul li a {
-        color: #000000; }
+  .header .header_meny ul li {
+    float: left;
+    margin-right: 10%;
+    padding-top: 47px;
+    font-size: 24px; }
+    .header .header_meny ul li a {
+      color: #000000; }
 
 .content .banner {
-  background-color: #ccc; }
+  padding-top: 5%;
+  background-image: url(../images/banner1.png);
+  height: 492px;
+  width: 100%;
+  background-position: 50%; }
+  .content .banner .title button {
+    margin-top: 5%;
+    background-color: #FFFF89;
+    border-radius: 0;
+    width: 340px;
+    height: 80px;
+    font-size: 28px;
+    padding: 18px 12px; }
+  .content .banner .title button:hover {
+    text-decoration: none;
+    background-color: #8A0714;
+    color: #FFFFFF; }
+  .content .banner .title p {
+    font-size: 35px;
+    color: #ffffff; }
+  .content .banner .title h2 {
+    line-height: 150%;
+    font-size: 40px;
+    color: #FFFFFF; }
+.content .speakers h2 {
+  font-size: 36px;
+  text-align: center;
+  margin: 50px 50px; }
+.content .speakers .column_red {
+  background-color: #8A0714;
+  height: 291px;
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 7%; }
+  .content .speakers .column_red button {
+    margin: 20px;
+    border: 1px solid #FFFFFF;
+    border-radius: 0px;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 15px 15px; }
+.content .speakers .column_green {
+  display: block;
+  background-color: #001D03;
+  height: 291px;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 7%; }
+  .content .speakers .column_green button {
+    margin: 20px;
+    border: 1px solid #FFFFFF;
+    border-radius: 0px;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 15px 15px; }
+.content .speakers .column_img {
+  width: 292px;
+  height: 291px;
+  padding-left: 0;
+  padding-right: 0; }
 
 /*# sourceMappingURL=style.css.map */
