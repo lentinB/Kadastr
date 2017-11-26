@@ -138,46 +138,95 @@ body {
   .blok_form {
     padding-left: 0;
     padding-right: 0;
+    .form {
+      text-align: center;
+      display: block;
+      height: 369px;
+      background: url('../images/wings1.png') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: 100%;
+      margin-top: -11px;
+      p {
+        padding-top: 5%;
+        text-align: center;
+        font-size: 28px;
+        z-index: 2;
+      }
+      input {
+        margin-left: 13px;
+        margin-right: 13px;
+        margin-top: 20px;
+        text-align: center;
+        background-color: #FFFFFF;
+        border: 1px solid #5e5e5e;
+        border-radius: 0;
+        width: 190px;
+        height: 50px;
+        font-size: 20px;
+        padding: 18px 12px;
+      }
+      button {
+        margin-top: 20px;
+        background-color: transparent;
+        border: 1px solid #8A0714;
+        border-radius: 0;
+        width: 410px;
+        height: 70px;
+        font-size: 28px;
+      }
+    }
   }
-  .form {
-    text-align: center;
-    display: block;
-    height: 369px;
-    background: url('../images/wings1.png') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: 100%;
-    margin-top: -11px;
+  .banner_fon {
+    background-image: url(../images/banner2.png);
+    height: 920px;
+    width: 100%;
+    background-position: 50%;
     p {
-      padding-top: 5%;
       text-align: center;
-      font-size: 28px;
-      z-index: 2;
-    }
-    input {
-      margin-left: 13px;
-      margin-right: 13px;
-      margin-top: 20px;
-      text-align: center;
-      background-color: #FFFFFF;
-      border: 1px solid #5e5e5e;
-      border-radius: 0;
-      width: 190px;
-      height: 50px;
-      font-size: 20px;
-      padding: 18px 12px;
-    }
-    button {
-      margin-top: 20px;
-      background-color: transparent;
-      border: 1px solid #8A0714;
-      border-radius: 0;
-      width: 410px;
-      height: 70px;
-      font-size: 28px;
+      font-size: 30px;
+      color: #FFFFFF;
     }
 
+    .banner_bloks {
+      display: inline-block;
+      overflow: hidden;
+      background-color: #8A0714;
+      //margin-top: 20px;
+      p {
+        font-size: 20px;
+      }
+      img {
+        padding-bottom: 25px;
+        padding-top: 25px;
+
+      }
+      .my-hidden {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        padding-top: 130px;
+        color: #8a0714;
+        opacity: 0;
+        transition: all .5s;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        -o-transition: all .5s;
+        &:hover{
+          opacity: 1;
+          top: 0;
+        }
+      }
+      .my-hover{
+        display: block;
+        height: 350px;
+        padding: 0 25px;
+      }
+    }
   }
 }
 
