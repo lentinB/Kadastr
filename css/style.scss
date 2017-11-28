@@ -274,7 +274,6 @@ body {
     }
   }
   .work {
-    display: flex;
     background-image: url(../images/banner3.png);
     height: 463px;
     width: 100%;
@@ -295,6 +294,44 @@ body {
       }
     }
   }
+  .reviews {
+
+    h2 {
+      font-size: 30px;
+      margin: 50px 100px;
+    }
+    p {
+      text-align: left;
+      font-size: 25px;
+    }
+    h3 {
+      text-align: left;
+      color: #2a6496;
+    }
+    img{
+      margin-top: 5px;
+    }
+    .fa-chevron-left {
+      font-size: 40px;
+      color: #000000;
+      position: absolute;
+      top: 50%;
+      left: -50px;
+
+    }
+    .fa-chevron-right {
+      font-size: 40px;
+      color: #000000;
+      position: absolute;
+      top: 50%;
+      right: -50px;
+    }
+  }
+  .map {
+    display: block;
+    margin-top: 100px;
+  }
+
 }
 
 @import "media";

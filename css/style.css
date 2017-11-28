@@ -207,7 +207,6 @@
     border: 2px solid #000000;
     text-decoration: none; }
 .content .work {
-  display: flex;
   background-image: url(../images/banner3.png);
   height: 463px;
   width: 100%;
@@ -222,5 +221,31 @@
     margin: 70px 0 90px; }
   .content .work .icon img {
     border-radius: 15px; }
+.content .reviews h2 {
+  font-size: 30px;
+  margin: 50px 100px; }
+.content .reviews p {
+  text-align: left;
+  font-size: 25px; }
+.content .reviews h3 {
+  text-align: left;
+  color: #2a6496; }
+.content .reviews img {
+  margin-top: 5px; }
+.content .reviews .fa-chevron-left {
+  font-size: 40px;
+  color: #000000;
+  position: absolute;
+  top: 50%;
+  left: -50px; }
+.content .reviews .fa-chevron-right {
+  font-size: 40px;
+  color: #000000;
+  position: absolute;
+  top: 50%;
+  right: -50px; }
+.content .map {
+  display: block;
+  margin-top: 100px; }
 
 /*# sourceMappingURL=style.css.map */
