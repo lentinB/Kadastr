@@ -190,10 +190,11 @@ body {
     }
 
     .banner_bloks {
+      width: 32%;
       display: inline-block;
       overflow: hidden;
       background-color: #8A0714;
-      //margin-top: 20px;
+      margin: 5px 5px;
       p {
         font-size: 20px;
       }
@@ -216,12 +217,29 @@ body {
         -moz-transition: all .5s;
         -ms-transition: all .5s;
         -o-transition: all .5s;
-        &:hover{
+        &:hover {
+          p {
+            font-size: 26px;
+            color: #8A0714;
+          }
+          .btn {
+            background-color: transparent;
+            border: 2px solid #8A0714;
+            border-radius: 0;
+            width: 65%;
+            height: 70px;
+            font-size: 20px;
+          }
+          .btn:hover {
+            color: #ffffff;
+            background-color: #8A0714;
+            text-decoration: none;
+          }
           opacity: 1;
           top: 0;
         }
       }
-      .my-hover{
+      .my-hover {
         display: block;
         height: 350px;
         padding: 0 25px;

@@ -139,9 +139,11 @@
     font-size: 30px;
     color: #FFFFFF; }
   .content .banner_fon .banner_bloks {
+    width: 32%;
     display: inline-block;
     overflow: hidden;
-    background-color: #8A0714; }
+    background-color: #8A0714;
+    margin: 5px 5px; }
     .content .banner_fon .banner_bloks p {
       font-size: 20px; }
     .content .banner_fon .banner_bloks img {
@@ -164,6 +166,20 @@
       .content .banner_fon .banner_bloks .my-hidden:hover {
         opacity: 1;
         top: 0; }
+        .content .banner_fon .banner_bloks .my-hidden:hover p {
+          font-size: 26px;
+          color: #8A0714; }
+        .content .banner_fon .banner_bloks .my-hidden:hover .btn {
+          background-color: transparent;
+          border: 2px solid #8A0714;
+          border-radius: 0;
+          width: 65%;
+          height: 70px;
+          font-size: 20px; }
+        .content .banner_fon .banner_bloks .my-hidden:hover .btn:hover {
+          color: #ffffff;
+          background-color: #8A0714;
+          text-decoration: none; }
     .content .banner_fon .banner_bloks .my-hover {
       display: block;
       height: 350px;
