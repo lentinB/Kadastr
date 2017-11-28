@@ -183,7 +183,8 @@ body {
     height: 920px;
     width: 100%;
     background-position: 50%;
-    p {
+    h2 {
+      margin: 50px 40px;
       text-align: center;
       font-size: 30px;
       color: #FFFFFF;
@@ -196,6 +197,7 @@ body {
       background-color: #8A0714;
       margin: 5px 5px;
       p {
+        color: #FFFFFF;
         font-size: 20px;
       }
       img {
@@ -212,11 +214,11 @@ body {
         padding-top: 130px;
         color: #8a0714;
         opacity: 0;
-        transition: all .5s;
-        -webkit-transition: all .5s;
-        -moz-transition: all .5s;
-        -ms-transition: all .5s;
-        -o-transition: all .5s;
+        transition: all .8s;
+        -webkit-transition: all .8s;
+        -moz-transition: all .8s;
+        -ms-transition: all .8s;
+        -o-transition: all .8s;
         &:hover {
           p {
             font-size: 26px;
@@ -243,6 +245,53 @@ body {
         display: block;
         height: 350px;
         padding: 0 25px;
+      }
+    }
+  }
+  .consultation {
+    padding-bottom: 50px;
+    h2 {
+      margin: 50px 50px;
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+    .btn {
+      color: #FFFFFF;
+      margin-top: 20px;
+      background-color: #8A0714;
+      border-radius: 0;
+      width: 350px;
+      height: 70px;
+      font-size: 28px;
+    }
+    .btn:hover {
+      color: #000000;
+      border: 2px solid #000000;
+      text-decoration: none;
+    }
+  }
+  .work {
+    display: flex;
+    background-image: url(../images/banner3.png);
+    height: 463px;
+    width: 100%;
+    background-position: 100%;
+    font-weight: bold;
+    color: #FFFFFF;
+    p {
+      font-size: 20px;
+      padding-top: 30px;
+    }
+    h2 {
+      font-size: 30px;
+      margin: 70px 0 90px;
+    }
+    .icon {
+      img {
+        border-radius: 15px;
       }
     }
   }
