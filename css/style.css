@@ -221,6 +221,18 @@
     margin: 70px 0 90px; }
   .content .work .icon img {
     border-radius: 15px; }
+.content .reviews .btn {
+  margin-top: 70px;
+  border-radius: 0;
+  width: 340px;
+  height: 80px;
+  font-size: 20px;
+  color: #FFFFFF;
+  background-color: #8A0714; }
+.content .reviews .btn:hover {
+  color: #000000;
+  border: 2px solid #000000;
+  text-decoration: none; }
 .content .reviews h2 {
   font-size: 30px;
   margin: 50px 100px; }
