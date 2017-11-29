@@ -344,7 +344,27 @@ body {
     display: block;
     margin-top: 100px;
   }
-
 }
+
+.footer {
+  .footer-work {
+    font-size: 20px;
+    padding-top: 50px;
+  }
+  ul {
+    padding-top: 50px;
+    li {
+      font-size: 20px;
+      p {
+        line-height: 23px;
+      }
+      a {
+        color: #000000;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
 
 @import "media";
