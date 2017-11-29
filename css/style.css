@@ -1,16 +1,26 @@
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  overflow-x: hidden;
+  opacity: 1; }
+
+.h2, .h3, .h4, .h5, .h6 {
+  font-weight: bold; }
+
 .header {
-  padding: 20px 0; }
+  padding: 18px;
+  font-size: 18px; }
   .header .header_contacts {
+    padding-top: 20px;
     text-align: right; }
     .header .header_contacts a {
       display: block;
-      color: #000000;
-      font-size: 18px; }
-    .header .header_contacts p {
-      line-height: 6px;
-      padding-top: 33px;
+      color: #000; }
+    .header .header_contacts span {
       font-size: 20px; }
-  .header .header_meny_mane h1 {
+  .header .header_menu_name .h1 {
     padding-top: 25px;
     font-size: 18px; }
   .header .header_logo a img {
@@ -18,13 +28,13 @@
     display: block;
     width: 155px;
     height: 126px; }
-  .header .header_meny ul li {
+  .header .header_menu ul li {
     float: left;
     margin-right: 10%;
     padding-top: 47px;
     font-size: 24px; }
-    .header .header_meny ul li a {
-      color: #000000; }
+    .header .header_menu ul li a {
+      color: #000; }
 
 .content .banner {
   padding-top: 5%;
@@ -32,7 +42,7 @@
   height: 492px;
   width: 100%;
   background-position: 50%; }
-  .content .banner .title button {
+  .content .banner .title .btn {
     margin-top: 5%;
     background-color: #FFFF89;
     border-radius: 0;
@@ -40,60 +50,63 @@
     height: 80px;
     font-size: 28px;
     padding: 18px 12px; }
-  .content .banner .title button:hover {
-    text-decoration: none;
-    background-color: #8A0714;
-    color: #FFFFFF; }
-  .content .banner .title p {
-    font-size: 35px;
-    color: #ffffff; }
-  .content .banner .title h2 {
-    line-height: 150%;
+    .content .banner .title .btnbtn:hover {
+      text-decoration: none;
+      background-color: #8A0714;
+      color: #FFF; }
+  .content .banner .title .h2 {
+    margin-top: 0;
+    line-height: 60px;
     font-size: 40px;
-    color: #FFFFFF; }
-.content .speakers h2 {
-  font-size: 36px;
-  text-align: center;
-  margin: 50px 50px; }
-.content .speakers .column_red {
-  background-color: #8A0714;
-  height: 291px;
-  color: #FFFFFF;
-  font-size: 20px;
-  text-align: center;
-  padding-top: 7%; }
-  .content .speakers .column_red button {
-    margin: 20px;
-    border: 1px solid #FFFFFF;
-    border-radius: 0px;
-    background-color: transparent;
-    color: #FFFFFF;
-    font-size: 20px;
-    padding: 15px 15px; }
-.content .speakers .column_green {
-  display: block;
-  background-color: #001D03;
-  height: 291px;
-  color: #ffffff;
-  font-size: 20px;
-  text-align: center;
-  padding-top: 7%; }
-  .content .speakers .column_green button {
-    margin: 20px;
-    border: 1px solid #FFFFFF;
-    border-radius: 0px;
-    background-color: transparent;
-    color: #FFFFFF;
-    font-size: 20px;
-    padding: 15px 15px; }
-.content .speakers .column_img {
-  height: 291px;
-  margin-bottom: 0;
-  padding-left: 0;
-  padding-right: 0; }
+    color: #FFF; }
+.content .speakers {
+  font-size: 20px; }
+  .content .speakers .h2 {
+    font-size: 36px;
+    text-align: center;
+    padding: 50px; }
+  .content .speakers .column_red {
+    background-color: #8A0714;
+    height: 291px;
+    color: #FFF;
+    text-align: center;
+    padding-top: 7%; }
+    .content .speakers .column_red .btn {
+      margin: 20px;
+      border: 1px solid #FFF;
+      border-radius: 0;
+      background-color: transparent;
+      color: #FFF;
+      font-size: 20px;
+      padding: 15px 15px; }
+      .content .speakers .column_red .btn:hover {
+        border: 2px solid #000;
+        color: #000; }
+  .content .speakers .column_green {
+    display: block;
+    background-color: #001D03;
+    height: 291px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 7%; }
+    .content .speakers .column_green .btn {
+      margin: 20px;
+      border: 1px solid #FFF;
+      border-radius: 0;
+      background-color: transparent;
+      color: #FFF;
+      font-size: 20px;
+      padding: 15px 15px; }
+      .content .speakers .column_green .btn:hover {
+        border: 2px solid #8A0714;
+        color: #8A0714; }
+  .content .speakers .column_img {
+    height: 291px;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0; }
 .content .blok_form {
-  padding-left: 0;
-  padding-right: 0; }
+  padding: 0; }
   .content .blok_form .form {
     text-align: center;
     display: block;
@@ -104,24 +117,25 @@
     -o-background-size: cover;
     background-size: 100%;
     margin-top: -11px; }
-    .content .blok_form .form p {
-      padding-top: 5%;
+    .content .blok_form .form span {
+      display: block;
+      font-weight: bold;
+      padding-top: 50px;
       text-align: center;
       font-size: 28px;
       z-index: 2; }
     .content .blok_form .form input {
-      margin-left: 13px;
-      margin-right: 13px;
+      margin: 13px 13px;
       margin-top: 20px;
       text-align: center;
-      background-color: #FFFFFF;
+      background-color: #FFF;
       border: 1px solid #5e5e5e;
       border-radius: 0;
       width: 190px;
       height: 50px;
       font-size: 20px;
       padding: 18px 12px; }
-    .content .blok_form .form button {
+    .content .blok_form .form .btn {
       margin-top: 20px;
       background-color: transparent;
       border: 1px solid #8A0714;
@@ -134,23 +148,25 @@
   height: 920px;
   width: 100%;
   background-position: 50%; }
-  .content .banner_fon h2 {
-    margin: 50px 40px;
+  .content .banner_fon .h2 {
+    padding: 40px;
     text-align: center;
     font-size: 30px;
-    color: #FFFFFF; }
+    color: #FFF; }
+  .content .banner_fon .h3 {
+    color: #FFF; }
   .content .banner_fon .banner_bloks {
     width: 32%;
     display: inline-block;
     overflow: hidden;
     background-color: #8A0714;
-    margin: 5px 5px; }
-    .content .banner_fon .banner_bloks p {
-      color: #FFFFFF;
-      font-size: 20px; }
+    margin: 5px; }
+    .content .banner_fon .banner_bloks span {
+      display: block;
+      color: #FFF;
+      font-size: 18px; }
     .content .banner_fon .banner_bloks img {
-      padding-bottom: 25px;
-      padding-top: 25px; }
+      padding: 15px; }
     .content .banner_fon .banner_bloks .my-hidden {
       position: absolute;
       left: 0;
@@ -163,12 +179,12 @@
       transition: all .8s;
       -webkit-transition: all .8s;
       -moz-transition: all .8s;
-      -ms-transition: all .8s;
       -o-transition: all .8s; }
       .content .banner_fon .banner_bloks .my-hidden:hover {
         opacity: 1;
         top: 0; }
-        .content .banner_fon .banner_bloks .my-hidden:hover p {
+        .content .banner_fon .banner_bloks .my-hidden:hover span {
+          display: block;
           font-size: 26px;
           color: #8A0714; }
         .content .banner_fon .banner_bloks .my-hidden:hover .btn {
@@ -178,99 +194,98 @@
           width: 65%;
           height: 70px;
           font-size: 20px; }
-        .content .banner_fon .banner_bloks .my-hidden:hover .btn:hover {
-          color: #ffffff;
-          background-color: #8A0714;
-          text-decoration: none; }
+          .content .banner_fon .banner_bloks .my-hidden:hover .btn:hover {
+            color: #fff;
+            background-color: #8A0714;
+            text-decoration: none; }
     .content .banner_fon .banner_bloks .my-hover {
       display: block;
       height: 350px;
       padding: 0 25px; }
 .content .consultation {
   padding-bottom: 50px; }
-  .content .consultation h2 {
-    margin: 50px 50px;
+  .content .consultation .h2 {
+    margin: 50px;
     font-size: 30px; }
-  .content .consultation p {
+  .content .consultation span {
+    display: block;
+    font-weight: bold;
     font-size: 20px;
     margin-bottom: 40px; }
   .content .consultation .btn {
-    color: #FFFFFF;
-    margin-top: 20px;
+    color: #FFF;
     background-color: #8A0714;
     border-radius: 0;
     width: 350px;
     height: 70px;
     font-size: 28px; }
-  .content .consultation .btn:hover {
-    color: #000000;
-    border: 2px solid #000000;
-    text-decoration: none; }
+    .content .consultation .btn:hover {
+      color: #000;
+      border: 2px solid #000;
+      text-decoration: none; }
 .content .work {
   background-image: url(../images/banner3.png);
   height: 463px;
   width: 100%;
   background-position: 100%;
   font-weight: bold;
-  color: #FFFFFF; }
-  .content .work p {
+  color: #FFF; }
+  .content .work span {
+    display: block;
     font-size: 20px;
     padding-top: 30px; }
-  .content .work h2 {
+  .content .work .h2 {
     font-size: 30px;
     margin: 70px 0 90px; }
   .content .work .icon img {
     border-radius: 15px; }
-.content .reviews .btn {
-  margin-top: 70px;
-  border-radius: 0;
-  width: 340px;
-  height: 80px;
-  font-size: 20px;
-  color: #FFFFFF;
-  background-color: #8A0714; }
-.content .reviews .btn:hover {
-  color: #000000;
-  border: 2px solid #000000;
-  text-decoration: none; }
-.content .reviews h2 {
-  font-size: 30px;
-  margin: 50px 100px; }
-.content .reviews p {
-  text-align: left;
-  font-size: 25px; }
-.content .reviews h3 {
-  text-align: left;
-  color: #2a6496; }
-.content .reviews img {
-  margin-top: 5px; }
-.content .reviews .fa-chevron-left {
-  font-size: 40px;
-  color: #000000;
-  position: absolute;
-  top: 50%;
-  left: -50px; }
-.content .reviews .fa-chevron-right {
-  font-size: 40px;
-  color: #000000;
-  position: absolute;
-  top: 50%;
-  right: -50px; }
-.content .map {
-  display: block;
-  margin-top: 100px; }
+.content .reviews {
+  padding: 50px; }
+  .content .reviews span {
+    display: block;
+    text-align: left;
+    font-size: 20px; }
+  .content .reviews .btn {
+    margin-top: 70px;
+    border-radius: 0;
+    width: 340px;
+    height: 80px;
+    font-size: 20px;
+    color: #FFF;
+    background-color: #8A0714; }
+    .content .reviews .btn:hover {
+      color: #000;
+      border: 2px solid #000;
+      text-decoration: none; }
+  .content .reviews .h2 {
+    font-size: 30px; }
+  .content .reviews .h3 {
+    text-align: left;
+    color: #2a6496; }
+  .content .reviews img {
+    margin-top: 5px; }
+  .content .reviews .fa-chevron-left {
+    font-size: 40px;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: -50px; }
+  .content .reviews .fa-chevron-right {
+    font-size: 40px;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    right: -50px; }
 
-.footer .footer-work {
-  font-size: 20px;
-  padding-top: 50px; }
-.footer ul {
-  padding-top: 50px; }
+.footer {
+  padding-bottom: 40px; }
+  .footer .footer-work {
+    font-size: 20px;
+    padding-top: 50px; }
   .footer ul li {
     font-size: 20px; }
-    .footer ul li p {
-      line-height: 23px; }
     .footer ul li a {
-      color: #000000;
+      color: #000;
       font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */

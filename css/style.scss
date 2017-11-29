@@ -1,27 +1,32 @@
 @import "var";
 
 body {
-
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  overflow-x: hidden;
+  opacity: 1;
 }
-
+.h2, .h3, .h4, .h5, .h6{
+  font-weight: bold;
+}
 .header {
-  padding: 20px 0;
+  padding: 18px;
+  font-size: 18px;
   .header_contacts {
+    padding-top: 20px;
     text-align: right;
     a {
-
       display: block;
-      color: #000000;
-      font-size: 18px;
+      color: #000;
     }
-    p {
-      line-height: 6px;
-      padding-top: 33px;
+    span {
       font-size: 20px;
     }
   }
-  .header_meny_mane {
-    h1 {
+  .header_menu_name {
+    .h1 {
       padding-top: 25px;
       font-size: 18px;
     }
@@ -36,7 +41,7 @@ body {
       }
     }
   }
-  .header_meny {
+  .header_menu {
     ul {
       li {
         float: left;
@@ -44,14 +49,13 @@ body {
         padding-top: 47px;
         font-size: 24px;
         a {
-          color: #000000;
+          color: #000;
         }
       }
     }
 
   }
 }
-
 .content {
   .banner {
     padding-top: 5%;
@@ -60,7 +64,7 @@ body {
     width: 100%;
     background-position: 50%;
     .title {
-      button {
+      .btn {
         margin-top: 5%;
         background-color: #FFFF89;
         border-radius: 0;
@@ -68,45 +72,46 @@ body {
         height: 80px;
         font-size: 28px;
         padding: 18px 12px;
+        &btn:hover {
+          text-decoration: none;
+          background-color: #8A0714;
+          color: #FFF;
+        }
       }
-      button:hover {
-        text-decoration: none;
-        background-color: #8A0714;
-        color: #FFFFFF;
-      }
-      p {
-        font-size: 35px;
-        color: #ffffff;
-      }
-      h2 {
-        line-height: 150%;
+      .h2 {
+        margin-top: 0;
+        line-height: 60px;
         font-size: 40px;
-        color: #FFFFFF;
+        color: #FFF;
       }
     }
   }
   .speakers {
-    h2 {
+    font-size: 20px;
+    .h2 {
       font-size: 36px;
       text-align: center;
-      margin: 50px 50px;
+      padding: 50px;
     }
     .column_red {
       background-color: #8A0714;
       height: 291px;
-      color: #FFFFFF;
-      font-size: 20px;
+      color: #FFF;
       text-align: center;
       padding-top: 7%;
 
-      button {
+      .btn {
         margin: 20px;
-        border: 1px solid #FFFFFF;
-        border-radius: 0px;
+        border: 1px solid #FFF;
+        border-radius: 0;
         background-color: transparent;
-        color: #FFFFFF;
+        color: #FFF;
         font-size: 20px;
         padding: 15px 15px;
+        &:hover {
+          border: 2px solid #000;
+          color: #000;
+        }
       }
     }
     .column_green {
@@ -114,18 +119,21 @@ body {
       background-color: #001D03;
       height: 291px;
       color: #ffffff;
-      font-size: 20px;
       text-align: center;
       padding-top: 7%;
 
-      button {
+      .btn {
         margin: 20px;
-        border: 1px solid #FFFFFF;
-        border-radius: 0px;
+        border: 1px solid #FFF;
+        border-radius: 0;
         background-color: transparent;
-        color: #FFFFFF;
+        color: #FFF;
         font-size: 20px;
         padding: 15px 15px;
+        &:hover {
+          border: 2px solid #8A0714;
+          color: #8A0714;
+        }
       }
     }
     .column_img {
@@ -136,8 +144,7 @@ body {
     }
   }
   .blok_form {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
     .form {
       text-align: center;
       display: block;
@@ -148,18 +155,19 @@ body {
       -o-background-size: cover;
       background-size: 100%;
       margin-top: -11px;
-      p {
-        padding-top: 5%;
+      span {
+        display: block;
+        font-weight: bold;
+        padding-top: 50px;
         text-align: center;
         font-size: 28px;
         z-index: 2;
       }
       input {
-        margin-left: 13px;
-        margin-right: 13px;
+        margin: 13px 13px;
         margin-top: 20px;
         text-align: center;
-        background-color: #FFFFFF;
+        background-color: #FFF;
         border: 1px solid #5e5e5e;
         border-radius: 0;
         width: 190px;
@@ -167,7 +175,7 @@ body {
         font-size: 20px;
         padding: 18px 12px;
       }
-      button {
+      .btn {
         margin-top: 20px;
         background-color: transparent;
         border: 1px solid #8A0714;
@@ -183,27 +191,28 @@ body {
     height: 920px;
     width: 100%;
     background-position: 50%;
-    h2 {
-      margin: 50px 40px;
+    .h2 {
+      padding: 40px;
       text-align: center;
       font-size: 30px;
-      color: #FFFFFF;
+      color: #FFF;
     }
-
+    .h3 {
+      color: #FFF;
+    }
     .banner_bloks {
       width: 32%;
       display: inline-block;
       overflow: hidden;
       background-color: #8A0714;
-      margin: 5px 5px;
-      p {
-        color: #FFFFFF;
-        font-size: 20px;
+      margin: 5px;
+      span {
+        display: block;
+        color: #FFF;
+        font-size: 18px;
       }
       img {
-        padding-bottom: 25px;
-        padding-top: 25px;
-
+        padding: 15px;
       }
       .my-hidden {
         position: absolute;
@@ -217,10 +226,10 @@ body {
         transition: all .8s;
         -webkit-transition: all .8s;
         -moz-transition: all .8s;
-        -ms-transition: all .8s;
         -o-transition: all .8s;
         &:hover {
-          p {
+          span {
+            display: block;
             font-size: 26px;
             color: #8A0714;
           }
@@ -231,11 +240,11 @@ body {
             width: 65%;
             height: 70px;
             font-size: 20px;
-          }
-          .btn:hover {
-            color: #ffffff;
-            background-color: #8A0714;
-            text-decoration: none;
+            &:hover {
+              color: #fff;
+              background-color: #8A0714;
+              text-decoration: none;
+            }
           }
           opacity: 1;
           top: 0;
@@ -250,28 +259,30 @@ body {
   }
   .consultation {
     padding-bottom: 50px;
-    h2 {
-      margin: 50px 50px;
+    .h2 {
+      margin: 50px;
       font-size: 30px;
     }
-    p {
+    span {
+      display: block;
+      font-weight: bold;
       font-size: 20px;
       margin-bottom: 40px;
     }
     .btn {
-      color: #FFFFFF;
-      margin-top: 20px;
+      color: #FFF;
       background-color: #8A0714;
       border-radius: 0;
       width: 350px;
       height: 70px;
       font-size: 28px;
+      &:hover {
+        color: #000;
+        border: 2px solid #000;
+        text-decoration: none;
+      }
     }
-    .btn:hover {
-      color: #000000;
-      border: 2px solid #000000;
-      text-decoration: none;
-    }
+
   }
   .work {
     background-image: url(../images/banner3.png);
@@ -279,12 +290,13 @@ body {
     width: 100%;
     background-position: 100%;
     font-weight: bold;
-    color: #FFFFFF;
-    p {
+    color: #FFF;
+    span {
+      display: block;
       font-size: 20px;
       padding-top: 30px;
     }
-    h2 {
+    .h2 {
       font-size: 30px;
       margin: 70px 0 90px;
     }
@@ -295,29 +307,30 @@ body {
     }
   }
   .reviews {
+    padding: 50px;
+    span {
+      display: block;
+      text-align: left;
+      font-size: 20px;
+    }
     .btn {
       margin-top: 70px;
       border-radius: 0;
       width: 340px;
       height: 80px;
       font-size: 20px;
-      color: #FFFFFF;
+      color: #FFF;
       background-color: #8A0714;
+      &:hover {
+        color: #000;
+        border: 2px solid #000;
+        text-decoration: none;
+      }
     }
-    .btn:hover {
-      color: #000000;
-      border: 2px solid #000000;
-      text-decoration: none;
-    }
-    h2 {
+    .h2 {
       font-size: 30px;
-      margin: 50px 100px;
     }
-    p {
-      text-align: left;
-      font-size: 25px;
-    }
-    h3 {
+    .h3 {
       text-align: left;
       color: #2a6496;
     }
@@ -326,45 +339,34 @@ body {
     }
     .fa-chevron-left {
       font-size: 40px;
-      color: #000000;
+      color: #000;
       position: absolute;
       top: 50%;
       left: -50px;
-
     }
     .fa-chevron-right {
       font-size: 40px;
-      color: #000000;
+      color: #000;
       position: absolute;
       top: 50%;
       right: -50px;
     }
   }
-  .map {
-    display: block;
-    margin-top: 100px;
-  }
 }
-
 .footer {
+  padding-bottom: 40px;
   .footer-work {
     font-size: 20px;
     padding-top: 50px;
   }
   ul {
-    padding-top: 50px;
     li {
       font-size: 20px;
-      p {
-        line-height: 23px;
-      }
       a {
-        color: #000000;
+        color: #000;
         font-size: 20px;
       }
     }
   }
 }
-
-
 @import "media";
