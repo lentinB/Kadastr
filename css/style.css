@@ -50,7 +50,7 @@ body {
     height: 80px;
     font-size: 28px;
     padding: 18px 12px; }
-    .content .banner .title .btnbtn:hover {
+    .content .banner .title .btn:hover {
       text-decoration: none;
       background-color: #8A0714;
       color: #FFF; }
