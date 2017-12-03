@@ -16,7 +16,7 @@ body {
 .header {
   .mobile-menu {
     a {
-      padding: 0;
+      padding: 0 20px;
       color: #000;
       font-size: 33px;
       text-decoration: none;
@@ -26,8 +26,10 @@ body {
     right: 0;
     left: 0;
     z-index: 99;
-    background-color: #2a6496;
+    background-color: #C0C0C0;
+    opacity: 0.8;
     li {
+      list-style-type: none;
       a {
         color: #000;
       }
