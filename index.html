@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>КадастерЪ</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -15,17 +15,17 @@
 <div class="header">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-2 col-sm-3 col-xs-12">
                 <div class="header_logo">
                     <a href="index.html"><img src="images/logo.png" alt="img"></a>
 
                 </div>
             </div>
-            <div class="col-md-3 header_menu_name">
+            <div class="col-md-3 col-sm-2 col-xs-12 header_menu_name">
                 <h1 class="h1">Кадастровые работы<br>и услуги в Ижевске </h1>
 
             </div>
-            <div class="col-md-4 header_menu">
+            <div class="col-md-4 col-sm-4 hidden-xs header_menu">
                 <ul class="list-inline">
                     <li><a href="#">Услуги</a></li>
                     <li><a href="#">О нас</a></li>
@@ -33,18 +33,28 @@
                 </ul>
 
             </div>
-            <div class="col-md-2">
+            <div class="mobile-menu visible-xs col-xs-12">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Меню</button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 ">
                 <div class="header_contacts">
                     <span>8(904)836-71-21</span>
                     <a href="mailto:baltin09@mail.ru">baltin09@mail.ru</a>
                     <a href="#myModal" data-toggle="modal">Обратный звонок</a>
 
                 </div>
-
             </div>
         </div>
     </div>
 </div>
+
 
 <div class="content">
     <!--Комплексное оформление документов-->
@@ -52,7 +62,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 title">
-                    <h2 class="h2">Комплексное оформление документов<br>для регистрации объектов<br>с доставкой по всей России</h2>
+                    <h2 class="h2">Комплексное оформление документов<br>для регистрации объектов<br>с доставкой по всей
+                        России</h2>
                     <button class="btn" data-toggle="modal" data-target="#myModal">Получить консультацию
                     </button>
                 </div>
@@ -65,21 +76,20 @@
         <div class="container">
             <div class="row">
                 <h2 class="h2">Полный комплекс услуг</h2>
-                <div class="col-md-3 column_green"><p>Межевание<br>участка</p>
+                <div class="col-md-3 col-sm-6 col-xs-6 column_green"><span>Межевание участка</span>
                     <button class="btn" data-toggle="modal" data-target="#myModal">Узнать стоимость</button>
                 </div>
-                <div class="col-md-3 column_img"><img src="images/smal1.png" alt="img"></div>
-                <div class="col-md-3 column_red"><p>Постановка на кадастровый учет
-                    <p></p>
+                <div class="col-md-3 col-sm-6 col-xs-6 hidden-xs column_img"><img src="images/smal1.png" alt="img"></div>
+                <div class="col-md-3 col-sm-6 col-xs-6 column_red"><span>Постановка на кадастровый учет</span>
                     <button class="btn" data-toggle="modal" data-target="#myModal">Узнать стоимость</button>
                 </div>
-                <div class="col-md-3 column_img"><img src="images/smal2.png" alt="img"></div>
-                <div class="col-md-3 column_img"><img src="images/smal3.png" alt="img"></div>
-                <div class="col-md-3 column_red"><p>Изготовление технического паспорта</p>
+                <div class="col-md-3 col-sm-6 col-xs-6 hidden-xs column_img"><img src="images/smal2.png" alt="img"></div>
+                <div class="col-md-3 col-sm-6 col-xs-6 hidden-xs column_img"><img src="images/smal3.png" alt="img"></div>
+                <div class="col-md-3 col-sm-6 col-xs-6 column_red"><span>Изготовление технического паспорта</span>
                     <button class="btn" data-toggle="modal" data-target="#myModal">Узнать стоимость</button>
                 </div>
-                <div class="col-md-3 column_img"><img src="images/smal4.png" alt="img"></div>
-                <div class="col-md-3 column_green"><p>Раздел земельных<br>участков</p>
+                <div class="col-md-3 col-sm-6 col-xs-6 hidden-xs column_img"><img src="images/smal4.png" alt="img"></div>
+                <div class="col-md-3 col-sm-6 col-xs-6 column_green"><span>Раздел земельных участков</span>
                     <button class="btn" data-toggle="modal" data-target="#myModal">Узнать стоимость</button>
                 </div>
             </div>
@@ -87,7 +97,7 @@
     </div>
     <!--конец-->
     <!--форма-->
-    <div class="blok_form">
+    <div class="blok_form text-center">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -110,13 +120,11 @@
     <!--конц-->
 
     <!--Блоки с анимацией-->
-    <div class="banner_fon">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-xs-12">
+    <div class="banner_fon text-center">
+        <div class="container">
                     <h2 class="h2">Почему клиенты выбирают именно «КадастрЪ»</h2>
-                </div>
-                <div class="col-md-4 banner_bloks">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12 banner_bloks">
                     <span class="my-hidden">
                         <span>Убедитесь в этом сами</span>
                         <button class="btn" data-toggle="modal" data-target="#myModal">Оставить заявку</button>
@@ -126,16 +134,12 @@
                         <span>Мы приступаем к формированию межевого плана в день поступления всех документов и
                             производим геодезические работы в течении двух дней.</span>
                     </div>
-
-
                 </div>
-                <div class="col-md-4 banner_bloks">
+                <div class="col-md-4 col-sm-6 col-xs-12 banner_bloks">
                     <span class="my-hidden">
                         <span>Убедитесь в этом сами</span>
-                        <button class="btn" data-toggle="modal" data-target="#myModal">Убедитесь в этом сами
-                        </button>
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Оставить заявку</button>
                     </span>
-
                     <div class="my-hover"><img src="images/icons2.png" alt="img">
                         <h3 class="h3">Современное оборудование</h3>
                         <span>Наша компания использует только самое современное и высокоточное геодезическое
@@ -143,24 +147,21 @@
                             данных.</span>
                     </div>
                 </div>
-                <div class="col-md-4 banner_bloks">
-                <span class="my-hidden">
+                <div class="col-md-4 col-sm-6 col-xs-12 banner_bloks">
+                    <span class="my-hidden">
                         <span>Убедитесь в этом сами</span>
-                        <button class="btn" data-toggle="modal" data-target="#myModal">Убедитесь в этом сами
-                        </button>
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Оставить заявку</button>
                 </span>
-
                     <div class="my-hover"><img src="images/icons3.png" alt="img">
                         <h3 class="h3">Многолетний опыт</h3>
                         <span>У нас самые квалифицированные специалисты, которые поставили более 17000 земельных
                             участков на учет. С нами Вы будете уверенны в качестве выполненных услуг.</span>
                     </div>
                 </div>
-                <div class="col-md-4 banner_bloks">
+                <div class="col-md-4 col-sm-6 col-xs-12 banner_bloks">
                     <span class="my-hidden">
                         <span>Убедитесь в этом сами</span>
-                        <button class="btn" data-toggle="modal" data-target="#myModal">Убедитесь в этом сами
-                        </button>
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Оставить заявку</button>
                     </span>
                     <div class="my-hover"><img src="images/icons4.png" alt="img">
                         <h3 class="h3">Законное оформление</h3>
@@ -168,11 +169,10 @@
                             гарантируем Вам надежность и качество нашей работы.</span>
                     </div>
                 </div>
-                <div class="col-md-4 banner_bloks">
+                <div class="col-md-4 col-sm-6 col-xs-12 banner_bloks">
                     <span class="my-hidden">
                         <span>Убедитесь в этом сами</span>
-                        <button class="btn" data-toggle="modal" data-target="#myModal">Убедитесь в этом сами
-                        </button>
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Оставить заявку</button>
                     </span>
                     <div class="my-hover"><img src="images/icons5.png" alt="img">
                         <h3 class="h3">Ценим ваше время</h3>
@@ -180,11 +180,10 @@
                             необходимость.</span>
                     </div>
                 </div>
-                <div class="col-md-4 banner_bloks">
+                <div class="col-md-4 col-sm-6 col-xs-12 banner_bloks">
                     <span class="my-hidden">
                         <span>Убедитесь в этом сами</span>
-                        <button class="btn" data-toggle="modal" data-target="#myModal">Убедитесь в этом сами
-                        </button>
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Оставить заявку</button>
                     </span>
                     <div class="my-hover"><img src="images/icons6.png" alt="img">
                         <h3 class="h3">Профессионализм</h3>
@@ -192,7 +191,6 @@
                             работы.</span>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -213,22 +211,19 @@
     <div class="work">
         <div class="container text-center">
             <div class="row">
-                <div class="col-xs-12">
                     <h2 class="h2">Как мы работаем?</h2>
                     <div class="row">
-                        <div class="col-md-2 col-md-offset-1 col-sm-4 icon"><img src="images/icon1.png" alt="img">
+                        <div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-6 icon"><img src="images/icon1.png" alt="img">
                             <span>Заключение договора</span></div>
-                        <div class="col-md-2 col-sm-4 icon"><img src="images/icon2.png" alt="img">
+                        <div class="col-md-2 col-sm-4 col-xs-6 icon"><img src="images/icon2.png" alt="img">
                             <span>Выезд геодезистов</span></div>
-                        <div class="col-md-2 col-sm-4 icon"><img src="images/icon3.png" alt="img">
+                        <div class="col-md-2 col-sm-4 col-xs-6 icon"><img src="images/icon3.png" alt="img">
                             <span>Схема на КПТ</span></div>
-                        <div class="col-md-2 col-sm-4 icon"><img src="images/icon4.png" alt="img">
+                        <div class="col-md-2 col-sm-6 col-xs-6 icon"><img src="images/icon4.png" alt="img">
                             <span>Акт согласования</span></div>
-                        <div class="col-md-2 col-sm-4 icon"><img src="images/icon5.png" alt="img">
-                            <span>Готовый электоронный документ</span></div>
+                        <div class="col-md-2 col-sm-6 col-xs-12 icon"><img src="images/icon5.png" alt="img">
+                            <span>Готовый<br>электоронный документ</span></div>
                     </div>
-
-                </div>
             </div>
         </div>
     </div>
@@ -239,10 +234,10 @@
                 <h2 class="h2">Отзывы наших клиентов</h2>
                 <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
                     <!-- Слайды карусели -->
-                    <div class="carousel-inner">
+                    <div class="carousel-inner col-xs-12">
                         <div class="active item">
-                            <div class="col-md-2"><img src="images/ava1.png" alt="img"></div>
-                            <div class="col-md-10">
+                            <div class="col-md-2 col-sm-2 col-xs-12"><img src="images/ava1.png" alt="img"></div>
+                            <div class="col-md-9 col-sm-10 col-xs-12">
                                 <h3 class="h3">Наталья Старикова</h3>
                                 <span>Заказывала документы после перепланировки квартиры.
                                     Девушки быстро отреагировали на заявку, назначили встречу,
@@ -252,8 +247,8 @@
                         </div>
 
                         <div class="item">
-                            <div class="col-md-2"><img src="images/ava1.png" alt="img"></div>
-                            <div class="col-md-10">
+                            <div class="col-md-2 col-sm-2 col-xs-12"><img src="images/ava1.png" alt="img"></div>
+                            <div class="col-md-9 col-sm-10 col-xs-12">
                                 <h3 class="h3">Наталья Старикова</h3>
                                 <span>Заказывала документы после перепланировки квартиры.
                                     Девушки быстро отреагировали на заявку, назначили встречу,
@@ -264,8 +259,8 @@
                         </div>
                         <!-- Слайд №3 -->
                         <div class="item">
-                            <div class="col-md-2"><img src="images/ava1.png" alt="img"></div>
-                            <div class="col-md-10">
+                            <div class="col-md-2 col-sm-2 col-xs-12"><img src="images/ava1.png" alt="img"></div>
+                            <div class="col-md-9 col-sm-10 col-xs-12">
                                 <h3 class="h3">Наталья Старикова</h3>
                                 <span>Заказывала документы после перепланировки квартиры.
                                     Девушки быстро отреагировали на заявку, назначили встречу,
@@ -274,13 +269,14 @@
                                     произвели все необходимые замеры и выдали готовые документы</span></div>
                         </div>
                     </div>
-                    <!-- Навигация для карусели -->
                     <a href="#myCarousel" data-slide="prev">
                         <span class="fa fa-chevron-left"></span>
                     </a>
                     <a href="#myCarousel" data-slide="next">
                         <span class="fa fa-chevron-right"></span>
                     </a>
+                    <!-- Навигация для карусели -->
+
                 </div>
                 <button class="btn">Добавить отзыв о нашей работе</button>
             </div>
@@ -297,7 +293,7 @@
 <div class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4">
                 <h3 class="h3">Услуги</h3>
                 <ul class="list-unstyled">
                     <li><a href="#">Технический план здания</a></li>
@@ -308,7 +304,7 @@
                     <li><a href="#">Раздел здания или помещения</a></li>
                 </ul>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-4">
                 <h3 class="h3">Цены</h3>
                 <ul class="list-unstyled">
                     <li><a href="#">Полезно знать</a></li>
@@ -317,15 +313,15 @@
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
-            <div class="col-md-2 col-md-offset-3">
-                <h3 class="3">Контакты</h3>
+            <div class="col-md-2 col-md-offset-3 col-sm-4">
+                <h3 class="h3">Контакты</h3>
                 <ul class="list-unstyled">
                     <li>8(904)836-71-21</li>
                     <li><a href="mailto:baltin09@mail.ru">baltin09@mail.ru</a></li>
                     <li><a href="#myModal" data-toggle="modal">Обратный звонок</a></li>
                 </ul>
             </div>
-            <div class="col-md-12 footer-work">
+            <div class="col-xs-12 footer-work">
                 Кадастровые работы и услуги в Ижевск, 2017
             </div>
         </div>

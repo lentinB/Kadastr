@@ -1,5 +1,6 @@
 @import "var";
 @import "media";
+
 body {
   font-size: 16px;
   min-width: 320px;
@@ -8,9 +9,11 @@ body {
   overflow-x: hidden;
   opacity: 1;
 }
-.h2, .h3, .h4, .h5, .h6{
+
+.h2, .h3, .h4, .h5, .h6 {
   font-weight: bold;
 }
+
 .header {
   padding: 18px;
   font-size: 18px;
@@ -22,7 +25,7 @@ body {
       color: #000;
     }
     span {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
   .header_menu_name {
@@ -44,8 +47,7 @@ body {
   .header_menu {
     ul {
       li {
-        float: left;
-        margin-right: 10%;
+        margin-right: 3%;
         padding-top: 47px;
         font-size: 24px;
         a {
@@ -56,6 +58,7 @@ body {
 
   }
 }
+
 .content {
   .banner {
     padding-top: 5%;
@@ -94,14 +97,15 @@ body {
       padding: 50px;
     }
     .column_red {
+      display: block;
       background-color: #8A0714;
-      height: 291px;
+      height: 265px;
       color: #FFF;
       text-align: center;
-      padding-top: 7%;
+      padding-top: 4%;
 
       .btn {
-        margin: 20px;
+        margin: 20px 0;
         border: 1px solid #FFF;
         border-radius: 0;
         background-color: transparent;
@@ -117,13 +121,13 @@ body {
     .column_green {
       display: block;
       background-color: #001D03;
-      height: 291px;
-      color: #ffffff;
+      height: 265px;
+      color: #fff;
       text-align: center;
-      padding-top: 7%;
+      padding-top: 4%;
 
       .btn {
-        margin: 20px;
+        margin: 20px 0;
         border: 1px solid #FFF;
         border-radius: 0;
         background-color: transparent;
@@ -137,10 +141,14 @@ body {
       }
     }
     .column_img {
-      height: 291px;
+      height: 265px;
       margin-bottom: 0;
       padding-left: 0;
       padding-right: 0;
+      img {
+        width: 100%;
+        height: 265px;
+      }
     }
   }
   .blok_form {
@@ -148,13 +156,13 @@ body {
     .form {
       text-align: center;
       display: block;
-      height: 369px;
+      height: 100%;
       background: url('../images/wings1.png') no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: 100%;
-      margin-top: -11px;
+      margin-top: -23px;
       span {
         display: block;
         font-weight: bold;
@@ -176,7 +184,7 @@ body {
         padding: 18px 12px;
       }
       .btn {
-        margin-top: 20px;
+        margin: 20px 20px;
         background-color: transparent;
         border: 1px solid #8A0714;
         border-radius: 0;
@@ -188,11 +196,10 @@ body {
   }
   .banner_fon {
     background-image: url(../images/banner2.png);
-    height: 920px;
     width: 100%;
     background-position: 50%;
     .h2 {
-      padding: 40px;
+      padding: 30px;
       text-align: center;
       font-size: 30px;
       color: #FFF;
@@ -201,23 +208,18 @@ body {
       color: #FFF;
     }
     .banner_bloks {
-      width: 32%;
-      display: inline-block;
-      overflow: hidden;
-      background-color: #8A0714;
-      margin: 5px;
+      margin: 15px 0;
       span {
         display: block;
         color: #FFF;
         font-size: 18px;
       }
       img {
-        padding: 15px;
+        padding: 10px;
       }
       .my-hidden {
         position: absolute;
-        left: 0;
-        width: 100%;
+        width: 92%;
         height: 100%;
         background-color: #fff;
         padding-top: 130px;
@@ -251,9 +253,10 @@ body {
         }
       }
       .my-hover {
+        background-color: #8A0714;
         display: block;
         height: 350px;
-        padding: 0 25px;
+        padding: 0 15px;
       }
     }
   }
@@ -286,7 +289,6 @@ body {
   }
   .work {
     background-image: url(../images/banner3.png);
-    height: 463px;
     width: 100%;
     background-position: 100%;
     font-weight: bold;
@@ -307,10 +309,11 @@ body {
     }
   }
   .reviews {
-    padding: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     span {
       display: block;
-      text-align: left;
+      text-align: center;
       font-size: 20px;
     }
     .btn {
@@ -334,25 +337,33 @@ body {
       text-align: left;
       color: #2a6496;
     }
+    span {
+      padding: 20px;
+    }
     img {
       margin-top: 5px;
+      margin-left: 80px;
     }
     .fa-chevron-left {
+      display: block;
       font-size: 40px;
       color: #000;
       position: absolute;
       top: 50%;
-      left: -50px;
+      left: 0;
+      margin-left: 50px;
     }
     .fa-chevron-right {
+      display: block;
       font-size: 40px;
       color: #000;
       position: absolute;
       top: 50%;
-      right: -50px;
+      right: 0;
     }
   }
 }
+
 .footer {
   padding-bottom: 40px;
   .footer-work {
@@ -369,4 +380,5 @@ body {
     }
   }
 }
+
 @import "media";

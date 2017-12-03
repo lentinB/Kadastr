@@ -1,3 +1,157 @@
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media (max-width: 992px) {
+  .header a {
+    font-size: 16px; }
+  .header .header_menu_name .h1 {
+    padding-top: 10px;
+    font-size: 16px; }
+  .header .header_contacts {
+    text-align: left; }
+    .header .header_contacts span {
+      font-size: 16px; }
+  .header .header_menu ul li {
+    font-weight: bold;
+    margin-right: 2%;
+    font-size: 18px; }
+
+  .content .blok_form .form span {
+    font-size: 20px;
+    padding-top: 90px; }
+  .content .banner_fon .h2 {
+    font-size: 30px; }
+  .content .banner_fon .h3 {
+    padding-top: 5px;
+    font-size: 22px; }
+  .content .banner_fon .banner_bloks span {
+    font-size: 18px; }
+  .content .banner_fon .banner_bloks img {
+    padding: 5px; }
+  .content .banner_fon .banner_bloks .my-hover {
+    display: block;
+    height: 350px;
+    padding: 5px; }
+  .content .banner_fon .banner_bloks .my-hidden:hover span {
+    font-size: 22px; }
+  .content .banner_fon .banner_bloks .my-hidden:hover .btn {
+    margin-top: 20px;
+    font-size: 18px; }
+  .content .work .h2 {
+    margin: 40px; }
+  .content .work .icon {
+    padding: 10px; }
+  .content .work span {
+    font-size: 16px; }
+  .content .reviews span {
+    text-align: center;
+    font-size: 20px;
+    display: block; }
+  .content .reviews .h3 {
+    margin-left: 35px;
+    text-align: left;
+    display: block; }
+
+  .footer .h3 {
+    text-align: center; }
+  .footer ul li {
+    text-align: center;
+    font-size: 16px; }
+    .footer ul li a {
+      font-size: 16px; } }
+/* Small Devices, Tablets */
+@media (max-width: 768px) {
+  .header .header_menu_name .h1 {
+    text-align: center; }
+  .header .mobile-menu {
+    position: absolute; }
+    .header .mobile-menu .btn-group {
+      position: absolute;
+      display: block;
+      width: 100%;
+      left: 42%;
+      top: 0; }
+  .header .header_contacts {
+    text-align: center; } }
+.content .banner .title .h2 {
+  font-size: 30px; }
+.content .speakers {
+  font-size: 18px; }
+.content .blok_form .form .btn {
+  font-size: 24px; }
+.content .banner_fon .my-hidden {
+  display: block;
+  margin-left: auto; }
+.content .work .h2 {
+  display: block;
+  margin: 10px;
+  font-size: 26px; }
+.content .work .icon span {
+  display: block;
+  font-size: 12px; }
+.content .reviews .h2 {
+  display: block;
+  font-size: 28px; }
+.content .reviews .h3 {
+  display: block;
+  font-size: 18px; }
+.content .reviews span {
+  font-size: 14px;
+  display: block; }
+.content .reviews img {
+  display: block; }
+
+/* Extra Small Devices, Phones */
+@media (max-width: 480px) {
+  .content .banner .title .h2 {
+    font-size: 20px; }
+  .content .banner .title .btn {
+    width: 250px;
+    height: 80px;
+    font-size: 20px; }
+  .content .speakers {
+    font-size: 12px; }
+    .content .speakers .h2 {
+      font-size: 20px; }
+    .content .speakers span {
+      display: block;
+      margin: 40px 0px 20px; }
+    .content .speakers .column_green .btn {
+      font-size: 12px; }
+    .content .speakers .column_red .btn {
+      font-size: 12px; }
+  .content .blok_form .form input {
+    font-size: 18px; }
+  .content .blok_form .form .btn {
+    font-size: 20px;
+    width: 248px; }
+  .content .banner_fon .h2 {
+    display: block;
+    font-size: 20px; }
+  .content .banner_fon .banner_bloks {
+    margin: 15px -8px -8px; }
+    .content .banner_fon .banner_bloks .h3 {
+      display: block;
+      font-size: 20px; }
+    .content .banner_fon .banner_bloks .span {
+      font-size: 18px;
+      display: block; }
+  .content .consultation .h2 {
+    display: block;
+    font-size: 20px; }
+  .content .consultation span {
+    font-size: 16px; }
+  .content .consultation .btn {
+    width: 250px; }
+  .content .reviews .h3 {
+    margin-left: 0;
+    text-align: center; }
+  .content .reviews img {
+    margin-left: 110px; }
+  .content .reviews .fa-chevron-left {
+    margin-left: 0; } }
+/* Custom, iPhone Retina */
+/**/
 body {
   font-size: 16px;
   min-width: 320px;
@@ -19,7 +173,7 @@ body {
       display: block;
       color: #000; }
     .header .header_contacts span {
-      font-size: 20px; }
+      font-size: 18px; }
   .header .header_menu_name .h1 {
     padding-top: 25px;
     font-size: 18px; }
@@ -29,8 +183,7 @@ body {
     width: 155px;
     height: 126px; }
   .header .header_menu ul li {
-    float: left;
-    margin-right: 10%;
+    margin-right: 3%;
     padding-top: 47px;
     font-size: 24px; }
     .header .header_menu ul li a {
@@ -66,13 +219,14 @@ body {
     text-align: center;
     padding: 50px; }
   .content .speakers .column_red {
+    display: block;
     background-color: #8A0714;
-    height: 291px;
+    height: 265px;
     color: #FFF;
     text-align: center;
-    padding-top: 7%; }
+    padding-top: 4%; }
     .content .speakers .column_red .btn {
-      margin: 20px;
+      margin: 20px 0;
       border: 1px solid #FFF;
       border-radius: 0;
       background-color: transparent;
@@ -85,12 +239,12 @@ body {
   .content .speakers .column_green {
     display: block;
     background-color: #001D03;
-    height: 291px;
-    color: #ffffff;
+    height: 265px;
+    color: #fff;
     text-align: center;
-    padding-top: 7%; }
+    padding-top: 4%; }
     .content .speakers .column_green .btn {
-      margin: 20px;
+      margin: 20px 0;
       border: 1px solid #FFF;
       border-radius: 0;
       background-color: transparent;
@@ -101,22 +255,25 @@ body {
         border: 2px solid #8A0714;
         color: #8A0714; }
   .content .speakers .column_img {
-    height: 291px;
+    height: 265px;
     margin-bottom: 0;
     padding-left: 0;
     padding-right: 0; }
+    .content .speakers .column_img img {
+      width: 100%;
+      height: 265px; }
 .content .blok_form {
   padding: 0; }
   .content .blok_form .form {
     text-align: center;
     display: block;
-    height: 369px;
+    height: 100%;
     background: url("../images/wings1.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: 100%;
-    margin-top: -11px; }
+    margin-top: -23px; }
     .content .blok_form .form span {
       display: block;
       font-weight: bold;
@@ -136,7 +293,7 @@ body {
       font-size: 20px;
       padding: 18px 12px; }
     .content .blok_form .form .btn {
-      margin-top: 20px;
+      margin: 20px 20px;
       background-color: transparent;
       border: 1px solid #8A0714;
       border-radius: 0;
@@ -145,32 +302,26 @@ body {
       font-size: 28px; }
 .content .banner_fon {
   background-image: url(../images/banner2.png);
-  height: 920px;
   width: 100%;
   background-position: 50%; }
   .content .banner_fon .h2 {
-    padding: 40px;
+    padding: 30px;
     text-align: center;
     font-size: 30px;
     color: #FFF; }
   .content .banner_fon .h3 {
     color: #FFF; }
   .content .banner_fon .banner_bloks {
-    width: 32%;
-    display: inline-block;
-    overflow: hidden;
-    background-color: #8A0714;
-    margin: 5px; }
+    margin: 15px 0; }
     .content .banner_fon .banner_bloks span {
       display: block;
       color: #FFF;
       font-size: 18px; }
     .content .banner_fon .banner_bloks img {
-      padding: 15px; }
+      padding: 10px; }
     .content .banner_fon .banner_bloks .my-hidden {
       position: absolute;
-      left: 0;
-      width: 100%;
+      width: 92%;
       height: 100%;
       background-color: #fff;
       padding-top: 130px;
@@ -199,9 +350,10 @@ body {
             background-color: #8A0714;
             text-decoration: none; }
     .content .banner_fon .banner_bloks .my-hover {
+      background-color: #8A0714;
       display: block;
       height: 350px;
-      padding: 0 25px; }
+      padding: 0 15px; }
 .content .consultation {
   padding-bottom: 50px; }
   .content .consultation .h2 {
@@ -225,7 +377,6 @@ body {
       text-decoration: none; }
 .content .work {
   background-image: url(../images/banner3.png);
-  height: 463px;
   width: 100%;
   background-position: 100%;
   font-weight: bold;
@@ -240,10 +391,11 @@ body {
   .content .work .icon img {
     border-radius: 15px; }
 .content .reviews {
-  padding: 50px; }
+  padding-top: 20px;
+  padding-bottom: 20px; }
   .content .reviews span {
     display: block;
-    text-align: left;
+    text-align: center;
     font-size: 20px; }
   .content .reviews .btn {
     margin-top: 70px;
@@ -262,20 +414,26 @@ body {
   .content .reviews .h3 {
     text-align: left;
     color: #2a6496; }
+  .content .reviews span {
+    padding: 20px; }
   .content .reviews img {
-    margin-top: 5px; }
+    margin-top: 5px;
+    margin-left: 80px; }
   .content .reviews .fa-chevron-left {
+    display: block;
     font-size: 40px;
     color: #000;
     position: absolute;
     top: 50%;
-    left: -50px; }
+    left: 0;
+    margin-left: 50px; }
   .content .reviews .fa-chevron-right {
+    display: block;
     font-size: 40px;
     color: #000;
     position: absolute;
     top: 50%;
-    right: -50px; }
+    right: 0; }
 
 .footer {
   padding-bottom: 40px; }
@@ -287,5 +445,160 @@ body {
     .footer ul li a {
       color: #000;
       font-size: 20px; }
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media (max-width: 992px) {
+  .header a {
+    font-size: 16px; }
+  .header .header_menu_name .h1 {
+    padding-top: 10px;
+    font-size: 16px; }
+  .header .header_contacts {
+    text-align: left; }
+    .header .header_contacts span {
+      font-size: 16px; }
+  .header .header_menu ul li {
+    font-weight: bold;
+    margin-right: 2%;
+    font-size: 18px; }
+
+  .content .blok_form .form span {
+    font-size: 20px;
+    padding-top: 90px; }
+  .content .banner_fon .h2 {
+    font-size: 30px; }
+  .content .banner_fon .h3 {
+    padding-top: 5px;
+    font-size: 22px; }
+  .content .banner_fon .banner_bloks span {
+    font-size: 18px; }
+  .content .banner_fon .banner_bloks img {
+    padding: 5px; }
+  .content .banner_fon .banner_bloks .my-hover {
+    display: block;
+    height: 350px;
+    padding: 5px; }
+  .content .banner_fon .banner_bloks .my-hidden:hover span {
+    font-size: 22px; }
+  .content .banner_fon .banner_bloks .my-hidden:hover .btn {
+    margin-top: 20px;
+    font-size: 18px; }
+  .content .work .h2 {
+    margin: 40px; }
+  .content .work .icon {
+    padding: 10px; }
+  .content .work span {
+    font-size: 16px; }
+  .content .reviews span {
+    text-align: center;
+    font-size: 20px;
+    display: block; }
+  .content .reviews .h3 {
+    margin-left: 35px;
+    text-align: left;
+    display: block; }
+
+  .footer .h3 {
+    text-align: center; }
+  .footer ul li {
+    text-align: center;
+    font-size: 16px; }
+    .footer ul li a {
+      font-size: 16px; } }
+/* Small Devices, Tablets */
+@media (max-width: 768px) {
+  .header .header_menu_name .h1 {
+    text-align: center; }
+  .header .mobile-menu {
+    position: absolute; }
+    .header .mobile-menu .btn-group {
+      position: absolute;
+      display: block;
+      width: 100%;
+      left: 42%;
+      top: 0; }
+  .header .header_contacts {
+    text-align: center; } }
+.content .banner .title .h2 {
+  font-size: 30px; }
+.content .speakers {
+  font-size: 18px; }
+.content .blok_form .form .btn {
+  font-size: 24px; }
+.content .banner_fon .my-hidden {
+  display: block;
+  margin-left: auto; }
+.content .work .h2 {
+  display: block;
+  margin: 10px;
+  font-size: 26px; }
+.content .work .icon span {
+  display: block;
+  font-size: 12px; }
+.content .reviews .h2 {
+  display: block;
+  font-size: 28px; }
+.content .reviews .h3 {
+  display: block;
+  font-size: 18px; }
+.content .reviews span {
+  font-size: 14px;
+  display: block; }
+.content .reviews img {
+  display: block; }
+
+/* Extra Small Devices, Phones */
+@media (max-width: 480px) {
+  .content .banner .title .h2 {
+    font-size: 20px; }
+  .content .banner .title .btn {
+    width: 250px;
+    height: 80px;
+    font-size: 20px; }
+  .content .speakers {
+    font-size: 12px; }
+    .content .speakers .h2 {
+      font-size: 20px; }
+    .content .speakers span {
+      display: block;
+      margin: 40px 0px 20px; }
+    .content .speakers .column_green .btn {
+      font-size: 12px; }
+    .content .speakers .column_red .btn {
+      font-size: 12px; }
+  .content .blok_form .form input {
+    font-size: 18px; }
+  .content .blok_form .form .btn {
+    font-size: 20px;
+    width: 248px; }
+  .content .banner_fon .h2 {
+    display: block;
+    font-size: 20px; }
+  .content .banner_fon .banner_bloks {
+    margin: 15px -8px -8px; }
+    .content .banner_fon .banner_bloks .h3 {
+      display: block;
+      font-size: 20px; }
+    .content .banner_fon .banner_bloks .span {
+      font-size: 18px;
+      display: block; }
+  .content .consultation .h2 {
+    display: block;
+    font-size: 20px; }
+  .content .consultation span {
+    font-size: 16px; }
+  .content .consultation .btn {
+    width: 250px; }
+  .content .reviews .h3 {
+    margin-left: 0;
+    text-align: center; }
+  .content .reviews img {
+    margin-left: 110px; }
+  .content .reviews .fa-chevron-left {
+    margin-left: 0; } }
+/* Custom, iPhone Retina */
+/**/
 
 /*# sourceMappingURL=style.css.map */
