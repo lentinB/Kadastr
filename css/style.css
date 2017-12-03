@@ -1,157 +1,3 @@
-/*==========  Desktop First  ==========*/
-/* Large Devices, Wide Screens */
-/* Medium Devices, Desktops */
-@media (max-width: 992px) {
-  .header a {
-    font-size: 16px; }
-  .header .header_menu_name .h1 {
-    padding-top: 10px;
-    font-size: 16px; }
-  .header .header_contacts {
-    text-align: left; }
-    .header .header_contacts span {
-      font-size: 16px; }
-  .header .header_menu ul li {
-    font-weight: bold;
-    margin-right: 2%;
-    font-size: 18px; }
-
-  .content .blok_form .form span {
-    font-size: 20px;
-    padding-top: 90px; }
-  .content .banner_fon .h2 {
-    font-size: 30px; }
-  .content .banner_fon .h3 {
-    padding-top: 5px;
-    font-size: 22px; }
-  .content .banner_fon .banner_bloks span {
-    font-size: 18px; }
-  .content .banner_fon .banner_bloks img {
-    padding: 5px; }
-  .content .banner_fon .banner_bloks .my-hover {
-    display: block;
-    height: 350px;
-    padding: 5px; }
-  .content .banner_fon .banner_bloks .my-hidden:hover span {
-    font-size: 22px; }
-  .content .banner_fon .banner_bloks .my-hidden:hover .btn {
-    margin-top: 20px;
-    font-size: 18px; }
-  .content .work .h2 {
-    margin: 40px; }
-  .content .work .icon {
-    padding: 10px; }
-  .content .work span {
-    font-size: 16px; }
-  .content .reviews span {
-    text-align: center;
-    font-size: 20px;
-    display: block; }
-  .content .reviews .h3 {
-    margin-left: 35px;
-    text-align: left;
-    display: block; }
-
-  .footer .h3 {
-    text-align: center; }
-  .footer ul li {
-    text-align: center;
-    font-size: 16px; }
-    .footer ul li a {
-      font-size: 16px; } }
-/* Small Devices, Tablets */
-@media (max-width: 768px) {
-  .header .header_menu_name .h1 {
-    text-align: center; }
-  .header .mobile-menu {
-    position: absolute; }
-    .header .mobile-menu .btn-group {
-      position: absolute;
-      display: block;
-      width: 100%;
-      left: 42%;
-      top: 0; }
-  .header .header_contacts {
-    text-align: center; } }
-.content .banner .title .h2 {
-  font-size: 30px; }
-.content .speakers {
-  font-size: 18px; }
-.content .blok_form .form .btn {
-  font-size: 24px; }
-.content .banner_fon .my-hidden {
-  display: block;
-  margin-left: auto; }
-.content .work .h2 {
-  display: block;
-  margin: 10px;
-  font-size: 26px; }
-.content .work .icon span {
-  display: block;
-  font-size: 12px; }
-.content .reviews .h2 {
-  display: block;
-  font-size: 28px; }
-.content .reviews .h3 {
-  display: block;
-  font-size: 18px; }
-.content .reviews span {
-  font-size: 14px;
-  display: block; }
-.content .reviews img {
-  display: block; }
-
-/* Extra Small Devices, Phones */
-@media (max-width: 480px) {
-  .content .banner .title .h2 {
-    font-size: 20px; }
-  .content .banner .title .btn {
-    width: 250px;
-    height: 80px;
-    font-size: 20px; }
-  .content .speakers {
-    font-size: 12px; }
-    .content .speakers .h2 {
-      font-size: 20px; }
-    .content .speakers span {
-      display: block;
-      margin: 40px 0px 20px; }
-    .content .speakers .column_green .btn {
-      font-size: 12px; }
-    .content .speakers .column_red .btn {
-      font-size: 12px; }
-  .content .blok_form .form input {
-    font-size: 18px; }
-  .content .blok_form .form .btn {
-    font-size: 20px;
-    width: 248px; }
-  .content .banner_fon .h2 {
-    display: block;
-    font-size: 20px; }
-  .content .banner_fon .banner_bloks {
-    margin: 15px -8px -8px; }
-    .content .banner_fon .banner_bloks .h3 {
-      display: block;
-      font-size: 20px; }
-    .content .banner_fon .banner_bloks .span {
-      font-size: 18px;
-      display: block; }
-  .content .consultation .h2 {
-    display: block;
-    font-size: 20px; }
-  .content .consultation span {
-    font-size: 16px; }
-  .content .consultation .btn {
-    width: 250px; }
-  .content .reviews .h3 {
-    margin-left: 0;
-    text-align: center; }
-  .content .reviews img {
-    margin-left: 110px; }
-  .content .reviews .fa-chevron-left {
-    margin-left: 0; } }
-/* Custom, iPhone Retina */
-/**/
 body {
   font-size: 16px;
   min-width: 320px;
@@ -166,6 +12,20 @@ body {
 .header {
   padding: 18px;
   font-size: 18px; }
+  .header .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    background-color: #2a6496; }
+    .header .mobile-menu a {
+      padding: 0;
+      color: #000;
+      font-size: 33px;
+      text-decoration: none; }
+    .header .mobile-menu li a {
+      color: #000; }
   .header .header_contacts {
     padding-top: 20px;
     text-align: right; }
@@ -393,10 +253,6 @@ body {
 .content .reviews {
   padding-top: 20px;
   padding-bottom: 20px; }
-  .content .reviews span {
-    display: block;
-    text-align: center;
-    font-size: 20px; }
   .content .reviews .btn {
     margin-top: 70px;
     border-radius: 0;
@@ -412,21 +268,16 @@ body {
   .content .reviews .h2 {
     font-size: 30px; }
   .content .reviews .h3 {
-    text-align: left;
     color: #2a6496; }
-  .content .reviews span {
-    padding: 20px; }
   .content .reviews img {
-    margin-top: 5px;
-    margin-left: 80px; }
+    margin-top: 5px; }
   .content .reviews .fa-chevron-left {
     display: block;
     font-size: 40px;
     color: #000;
     position: absolute;
     top: 50%;
-    left: 0;
-    margin-left: 50px; }
+    left: 0; }
   .content .reviews .fa-chevron-right {
     display: block;
     font-size: 40px;
@@ -491,14 +342,6 @@ body {
     padding: 10px; }
   .content .work span {
     font-size: 16px; }
-  .content .reviews span {
-    text-align: center;
-    font-size: 20px;
-    display: block; }
-  .content .reviews .h3 {
-    margin-left: 35px;
-    text-align: left;
-    display: block; }
 
   .footer .h3 {
     text-align: center; }
@@ -508,47 +351,36 @@ body {
     .footer ul li a {
       font-size: 16px; } }
 /* Small Devices, Tablets */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .header .header_logo {
+    margin-top: 35px; }
   .header .header_menu_name .h1 {
     text-align: center; }
-  .header .mobile-menu {
-    position: absolute; }
-    .header .mobile-menu .btn-group {
-      position: absolute;
-      display: block;
-      width: 100%;
-      left: 42%;
-      top: 0; }
   .header .header_contacts {
-    text-align: center; } }
-.content .banner .title .h2 {
-  font-size: 30px; }
-.content .speakers {
-  font-size: 18px; }
-.content .blok_form .form .btn {
-  font-size: 24px; }
-.content .banner_fon .my-hidden {
-  display: block;
-  margin-left: auto; }
-.content .work .h2 {
-  display: block;
-  margin: 10px;
-  font-size: 26px; }
-.content .work .icon span {
-  display: block;
-  font-size: 12px; }
-.content .reviews .h2 {
-  display: block;
-  font-size: 28px; }
-.content .reviews .h3 {
-  display: block;
-  font-size: 18px; }
-.content .reviews span {
-  font-size: 14px;
-  display: block; }
-.content .reviews img {
-  display: block; }
+    text-align: center; }
 
+  .content .banner .title .h2 {
+    font-size: 30px; }
+  .content .speakers {
+    font-size: 18px; }
+  .content .blok_form .form .btn {
+    font-size: 24px; }
+  .content .banner_fon .my-hidden {
+    display: block;
+    margin-left: auto; }
+  .content .work .h2 {
+    display: block;
+    margin: 10px;
+    font-size: 26px; }
+  .content .work .icon span {
+    display: block;
+    font-size: 12px; }
+  .content .reviews .h2 {
+    display: block;
+    font-size: 28px; }
+  .content .reviews .h3 {
+    font-size: 18px;
+    text-align: center; } }
 /* Extra Small Devices, Phones */
 @media (max-width: 480px) {
   .content .banner .title .h2 {
@@ -577,7 +409,7 @@ body {
     display: block;
     font-size: 20px; }
   .content .banner_fon .banner_bloks {
-    margin: 15px -8px -8px; }
+    margin: 15px 0 -8px; }
     .content .banner_fon .banner_bloks .h3 {
       display: block;
       font-size: 20px; }
@@ -590,14 +422,7 @@ body {
   .content .consultation span {
     font-size: 16px; }
   .content .consultation .btn {
-    width: 250px; }
-  .content .reviews .h3 {
-    margin-left: 0;
-    text-align: center; }
-  .content .reviews img {
-    margin-left: 110px; }
-  .content .reviews .fa-chevron-left {
-    margin-left: 0; } }
+    width: 250px; } }
 /* Custom, iPhone Retina */
 /**/
 
