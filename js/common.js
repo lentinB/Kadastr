@@ -82,3 +82,19 @@ $(document).ready(function() {
         }
     });
 });
+
+//якорные ссылки
+$(function(){
+    $('.link-menu').click(function(){
+        var target = $(this).attr('href');
+        $('html, body').animate({scrollTop: $(target).offset().top}, 800);//800 - длительность скроллинга в мс
+        // return false;
+
+        var hamburger = $(this).parents('.mobile-menu').find('.hamburger');
+        hamburger.removeClass('is-active');
+
+        var nav = $(this).parents('.mobile-menu').find('.hidden-menu');
+        nav.addClass('hidden');
+
+    });
+});
