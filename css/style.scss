@@ -117,6 +117,7 @@ body {
       padding: 50px;
     }
     .column_red {
+      position: relative;
       display: block;
       background-color: #8A0714;
       height: 265px;
@@ -125,12 +126,19 @@ body {
       padding-top: 4%;
 
       .btn {
-        margin: 20px 0;
+        position: absolute;
+        display: block;
+        margin: auto;
+        right: 0;
+        bottom: 30px;
+        left: 0;
+        width: 200px;
+        height: 60px;
         border: 1px solid #FFF;
         border-radius: 0;
         background-color: transparent;
         color: #FFF;
-        font-size: 20px;
+        font-size: 16px;
         padding: 15px 15px;
         &:hover {
           border: 2px solid #000;
@@ -139,6 +147,7 @@ body {
       }
     }
     .column_green {
+      position: relative;
       display: block;
       background-color: #001D03;
       height: 265px;
@@ -147,12 +156,19 @@ body {
       padding-top: 4%;
 
       .btn {
-        margin: 20px 0;
+        position: absolute;
+        display: block;
+        margin: auto;
+        right: 0;
+        bottom: 30px;
+        left: 0;
+        width: 200px;
+        height: 60px;
         border: 1px solid #FFF;
         border-radius: 0;
         background-color: transparent;
         color: #FFF;
-        font-size: 20px;
+        font-size: 16px;
         padding: 15px 15px;
         &:hover {
           border: 2px solid #8A0714;

@@ -82,6 +82,7 @@ body {
     text-align: center;
     padding: 50px; }
   .content .speakers .column_red {
+    position: relative;
     display: block;
     background-color: #8A0714;
     height: 265px;
@@ -89,17 +90,25 @@ body {
     text-align: center;
     padding-top: 4%; }
     .content .speakers .column_red .btn {
-      margin: 20px 0;
+      position: absolute;
+      display: block;
+      margin: auto;
+      right: 0;
+      bottom: 30px;
+      left: 0;
+      width: 200px;
+      height: 60px;
       border: 1px solid #FFF;
       border-radius: 0;
       background-color: transparent;
       color: #FFF;
-      font-size: 20px;
+      font-size: 16px;
       padding: 15px 15px; }
       .content .speakers .column_red .btn:hover {
         border: 2px solid #000;
         color: #000; }
   .content .speakers .column_green {
+    position: relative;
     display: block;
     background-color: #001D03;
     height: 265px;
@@ -107,12 +116,19 @@ body {
     text-align: center;
     padding-top: 4%; }
     .content .speakers .column_green .btn {
-      margin: 20px 0;
+      position: absolute;
+      display: block;
+      margin: auto;
+      right: 0;
+      bottom: 30px;
+      left: 0;
+      width: 200px;
+      height: 60px;
       border: 1px solid #FFF;
       border-radius: 0;
       background-color: transparent;
       color: #FFF;
-      font-size: 20px;
+      font-size: 16px;
       padding: 15px 15px; }
       .content .speakers .column_green .btn:hover {
         border: 2px solid #8A0714;
@@ -391,7 +407,7 @@ body {
   .content .banner .title .btn {
     width: 250px;
     height: 80px;
-    font-size: 20px; }
+    font-size: 16px; }
   .content .speakers {
     font-size: 12px; }
     .content .speakers .h2 {
@@ -400,13 +416,15 @@ body {
       display: block;
       margin: 40px 0px 20px; }
     .content .speakers .column_green .btn {
+      width: 140px;
       font-size: 12px; }
     .content .speakers .column_red .btn {
+      width: 140px;
       font-size: 12px; }
   .content .blok_form .form input {
     font-size: 18px; }
   .content .blok_form .form .btn {
-    font-size: 20px;
+    font-size: 18px;
     width: 248px; }
   .content .banner_fon .h2 {
     display: block;
@@ -425,7 +443,11 @@ body {
   .content .consultation span {
     font-size: 16px; }
   .content .consultation .btn {
-    width: 250px; } }
+    font-size: 18px;
+    width: 250px; }
+  .content .reviews .btn {
+    font-size: 18px;
+    width: 300px; } }
 /* Custom, iPhone Retina */
 /**/
 
